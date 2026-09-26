@@ -1,0 +1,1617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>HTML &amp; CSS Tutorials</title>
+  <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="logo">
+      <span class="logo-html">&lt;HTML&gt;</span>
+      <span class="logo-css">CSS</span>
+      <span class="logo-title">Tutorials</span>
+    </div>
+    <nav>
+      <a href="#html-section" class="nav-link active" data-section="html">HTML</a>
+      <a href="#css-section" class="nav-link" data-section="css">CSS</a>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <h1>Learn <span class="highlight-html">HTML</span> &amp; <span class="highlight-css">CSS</span></h1>
+    <p>A complete beginner-to-intermediate curriculum. Every lesson has a live code editor — edit the code and see results instantly.</p>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">14</span><span class="stat-label">HTML Lessons</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">14</span><span class="stat-label">CSS Lessons</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">28</span><span class="stat-label">Total Topics</span></div>
+    </div>
+  </section>
+
+  <!-- ===== PINNED PROGRESS BAR ===== -->
+  <div class="progress-bar-wrap">
+    <div class="progress-bar-inner">
+      <div class="progress-left">
+        <span class="progress-title">Your Progress</span>
+      </div>
+      <div class="progress-center">
+        <div class="progress-track">
+          <div class="progress-fill" id="global-progress-fill"></div>
+        </div>
+      </div>
+      <div class="progress-right">
+        <span id="global-progress-label" class="progress-label">0 / 28</span>
+        <span class="progress-pct" id="global-progress-pct">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================================================
+       HTML TUTORIALS  (lessons 1 – 14)
+       ================================================================ -->
+  <section id="html-section" class="tutorial-section">
+    <h2 class="section-title"><span class="badge badge-html">HTML</span> Tutorials</h2>
+    <p class="section-intro">HTML (HyperText Markup Language) is the skeleton of every web page. Learn the essential tags and structure that every web developer must know.</p>
+
+    <!-- ── HTML 1 ── -->
+    <div class="tutorial-card" data-tutorial="1">
+      <div class="tutorial-header">
+        <span class="lesson-number">Lesson 1</span>
+        <h3>Basic HTML Document Structure</h3>
+        <p class="lesson-desc">Every HTML page starts with the same boilerplate. <code>&lt;!DOCTYPE html&gt;</code> tells the browser which version of HTML to use. <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code> are the three essential root elements.</p>
+      </div>
+      <div class="editor-area">
+        <div class="code-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">HTML</span>
+            <button class="run-btn" onclick="runCode(1)">&#9654; Run</button>
+            <button class="reset-btn" onclick="resetCode(1)">&#8635; Reset</button>
+          </div>
+          <textarea class="code-editor" id="code-1" spellcheck="false">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;title&gt;My First Web Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;This is my very first web page.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</textarea>
+        </div>
+        <div class="output-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">Output</span>
+          </div>
+          <iframe class="preview-frame" id="preview-1" title="Preview 1"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── HTML 2 ── -->
+    <div class="tutorial-card" data-tutorial="2">
+      <div class="tutorial-header">
+        <span class="lesson-number">Lesson 2</span>
+        <h3>Headings &amp; Paragraphs</h3>
+        <p class="lesson-desc">HTML has six heading levels <code>&lt;h1&gt;</code>–<code>&lt;h6&gt;</code>. <code>&lt;h1&gt;</code> is the most important (used once per page). <code>&lt;p&gt;</code> creates paragraphs. Use <code>&lt;strong&gt;</code> for bold and <code>&lt;em&gt;</code> for italic text.</p>
+      </div>
+      <div class="editor-area">
+        <div class="code-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">HTML</span>
+            <button class="run-btn" onclick="runCode(2)">&#9654; Run</button>
+            <button class="reset-btn" onclick="resetCode(2)">&#8635; Reset</button>
+          </div>
+          <textarea class="code-editor" id="code-2" spellcheck="false">&lt;h1&gt;Heading 1 — Page Title&lt;/h1&gt;
+&lt;h2&gt;Heading 2 — Section&lt;/h2&gt;
+&lt;h3&gt;Heading 3 — Sub-section&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6 — Smallest&lt;/h6&gt;
+
+&lt;p&gt;A regular paragraph of text. HTML ignores extra    spaces.&lt;/p&gt;
+&lt;p&gt;Second paragraph with &lt;strong&gt;bold&lt;/strong&gt;, &lt;em&gt;italic&lt;/em&gt;, and &lt;u&gt;underline&lt;/u&gt;.&lt;/p&gt;
+&lt;p&gt;Use &lt;mark&gt;mark&lt;/mark&gt; to highlight and &lt;del&gt;del&lt;/del&gt; to strikethrough.&lt;/p&gt;</textarea>
+        </div>
+        <div class="output-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">Output</span>
+          </div>
+          <iframe class="preview-frame" id="preview-2" title="Preview 2"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── HTML 3 ── -->
+    <div class="tutorial-card" data-tutorial="3">
+      <div class="tutorial-header">
+        <span class="lesson-number">Lesson 3</span>
+        <h3>Text Formatting Tags</h3>
+        <p class="lesson-desc">HTML provides many inline tags to format text: <code>&lt;b&gt;</code>, <code>&lt;i&gt;</code>, <code>&lt;small&gt;</code>, <code>&lt;sub&gt;</code>, <code>&lt;sup&gt;</code>, <code>&lt;code&gt;</code>, <code>&lt;blockquote&gt;</code>, <code>&lt;br&gt;</code>, and <code>&lt;hr&gt;</code>.</p>
+      </div>
+      <div class="editor-area">
+        <div class="code-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">HTML</span>
+            <button class="run-btn" onclick="runCode(3)">&#9654; Run</button>
+            <button class="reset-btn" onclick="resetCode(3)">&#8635; Reset</button>
+          </div>
+          <textarea class="code-editor" id="code-3" spellcheck="false">&lt;p&gt;Normal text, &lt;b&gt;bold&lt;/b&gt;, &lt;i&gt;italic&lt;/i&gt;, &lt;small&gt;small&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;Water formula: H&lt;sub&gt;2&lt;/sub&gt;O&lt;/p&gt;
+&lt;p&gt;Area: 5&lt;sup&gt;2&lt;/sup&gt; = 25&lt;/p&gt;
+
+&lt;p&gt;Inline code: &lt;code&gt;console.log("hello")&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  "The only way to do great work is to love what you do." — Steve Jobs
+&lt;/blockquote&gt;
+
+&lt;p&gt;Line one&lt;br&gt;Line two after a line break&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Content below a horizontal rule.&lt;/p&gt;</textarea>
+        </div>
+        <div class="output-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">Output</span>
+          </div>
+          <iframe class="preview-frame" id="preview-3" title="Preview 3"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── HTML 4 ── -->
+    <div class="tutorial-card" data-tutorial="4">
+      <div class="tutorial-header">
+        <span class="lesson-number">Lesson 4</span>
+        <h3>Links &amp; Anchors</h3>
+        <p class="lesson-desc">The <code>&lt;a&gt;</code> tag creates hyperlinks. <code>href</code> sets the destination. Use <code>target="_blank"</code> to open in a new tab. Links can also jump to sections on the same page using <code>#id</code>.</p>
+      </div>
+      <div class="editor-area">
+        <div class="code-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">HTML</span>
+            <button class="run-btn" onclick="runCode(4)">&#9654; Run</button>
+            <button class="reset-btn" onclick="resetCode(4)">&#8635; Reset</button>
+          </div>
+          <textarea class="code-editor" id="code-4" spellcheck="false">&lt;!-- External link --&gt;
+&lt;a href="https://www.google.com" target="_blank"&gt;Open Google&lt;/a&gt;
+
+&lt;br&gt;&lt;br&gt;
+
+&lt;!-- Email link --&gt;
+&lt;a href="mailto:hello@example.com"&gt;Send Email&lt;/a&gt;
+
+&lt;br&gt;&lt;br&gt;
+
+&lt;!-- Phone link --&gt;
+&lt;a href="tel:+639123456789"&gt;Call Us&lt;/a&gt;
+
+&lt;br&gt;&lt;br&gt;
+
+&lt;!-- Anchor / jump link --&gt;
+&lt;a href="#section2"&gt;Jump to Section 2&lt;/a&gt;
+
+&lt;p style="margin-top:60px" id="section2"&gt;
+  You jumped here! &#x1F4CD;
+&lt;/p&gt;</textarea>
+        </div>
+        <div class="output-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">Output</span>
+          </div>
+          <iframe class="preview-frame" id="preview-4" title="Preview 4"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── HTML 5 ── -->
+    <div class="tutorial-card" data-tutorial="5">
+      <div class="tutorial-header">
+        <span class="lesson-number">Lesson 5</span>
+        <h3>Images</h3>
+        <p class="lesson-desc"><code>&lt;img&gt;</code> is a self-closing tag. The <code>src</code> attribute sets the image source and <code>alt</code> provides accessible text. Always include <code>alt</code> for accessibility and SEO.</p>
+      </div>
+      <div class="editor-area">
+        <div class="code-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">HTML</span>
+            <button class="run-btn" onclick="runCode(5)">&#9654; Run</button>
+            <button class="reset-btn" onclick="resetCode(5)">&#8635; Reset</button>
+          </div>
+          <textarea class="code-editor" id="code-5" spellcheck="false">&lt;!-- Basic image --&gt;
+&lt;img src="https://placehold.co/300x150/4F8EF7/fff?text=HTML+Image"
+     alt="A blue placeholder image"
+     width="300" /&gt;
+
+&lt;br&gt;&lt;br&gt;
+
+&lt;!-- Image with a caption using figure --&gt;
+&lt;figure&gt;
+  &lt;img src="https://placehold.co/200x120/e44d26/fff?text=Figure"
+       alt="Figure example"
+       width="200" /&gt;
+  &lt;figcaption&gt;Fig 1. An HTML figure with a caption.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;!-- Image as a link --&gt;
+&lt;a href="https://www.example.com" target="_blank"&gt;
+  &lt;img src="https://placehold.co/150x60/2ecc71/fff?text=Click+Me"
+       alt="Clickable image" width="150" /&gt;
+&lt;/a&gt;</textarea>
+        </div>
+        <div class="output-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">Output</span>
+          </div>
+          <iframe class="preview-frame" id="preview-5" title="Preview 5"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── HTML 6 ── -->
+    <div class="tutorial-card" data-tutorial="6">
+      <div class="tutorial-header">
+        <span class="lesson-number">Lesson 6</span>
+        <h3>Lists — Ordered, Unordered &amp; Definition</h3>
+        <p class="lesson-desc"><code>&lt;ul&gt;</code> makes bullet lists, <code>&lt;ol&gt;</code> makes numbered lists, and <code>&lt;dl&gt;</code> makes definition lists. Lists can be nested inside each other.</p>
+      </div>
+      <div class="editor-area">
+        <div class="code-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">HTML</span>
+            <button class="run-btn" onclick="runCode(6)">&#9654; Run</button>
+            <button class="reset-btn" onclick="resetCode(6)">&#8635; Reset</button>
+          </div>
+          <textarea class="code-editor" id="code-6" spellcheck="false">&lt;h4&gt;Unordered List&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+  &lt;li&gt;JavaScript
+    &lt;ul&gt;
+      &lt;li&gt;React&lt;/li&gt;
+      &lt;li&gt;Vue&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Ordered List&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;Learn HTML&lt;/li&gt;
+  &lt;li&gt;Learn CSS&lt;/li&gt;
+  &lt;li&gt;Learn JavaScript&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4&gt;Definition List&lt;/h4&gt;
+&lt;dl&gt;
+  &lt;dt&gt;HTML&lt;/dt&gt;
+  &lt;dd&gt;HyperText Markup Language — the structure of web pages.&lt;/dd&gt;
+  &lt;dt&gt;CSS&lt;/dt&gt;
+  &lt;dd&gt;Cascading Style Sheets — the style of web pages.&lt;/dd&gt;
+&lt;/dl&gt;</textarea>
+        </div>
+        <div class="output-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">Output</span>
+          </div>
+          <iframe class="preview-frame" id="preview-6" title="Preview 6"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── HTML 7 ── -->
+    <div class="tutorial-card" data-tutorial="7">
+      <div class="tutorial-header">
+        <span class="lesson-number">Lesson 7</span>
+        <h3>Tables</h3>
+        <p class="lesson-desc">Tables organise data into rows (<code>&lt;tr&gt;</code>) and columns (<code>&lt;td&gt;</code>). Use <code>&lt;th&gt;</code> for header cells, <code>&lt;thead&gt;</code>/<code>&lt;tbody&gt;</code>/<code>&lt;tfoot&gt;</code> for structure, and <code>colspan</code>/<code>rowspan</code> to merge cells.</p>
+      </div>
+      <div class="editor-area">
+        <div class="code-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">HTML</span>
+            <button class="run-btn" onclick="runCode(7)">&#9654; Run</button>
+            <button class="reset-btn" onclick="resetCode(7)">&#8635; Reset</button>
+          </div>
+          <textarea class="code-editor" id="code-7" spellcheck="false">&lt;table border="1" cellpadding="8" cellspacing="0" width="100%"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      &lt;th&gt;Subject&lt;/th&gt;
+      &lt;th&gt;Grade&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td rowspan="2"&gt;Alice&lt;/td&gt;
+      &lt;td&gt;HTML&lt;/td&gt;
+      &lt;td&gt;95&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;CSS&lt;/td&gt;
+      &lt;td&gt;92&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Bob&lt;/td&gt;
+      &lt;td colspan="2"&gt;Absent&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td colspan="3"&gt;End of Records&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;</textarea>
+        </div>
+        <div class="output-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">Output</span>
+          </div>
+          <iframe class="preview-frame" id="preview-7" title="Preview 7"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── HTML 8 ── -->
+    <div class="tutorial-card" data-tutorial="8">
+      <div class="tutorial-header">
+        <span class="lesson-number">Lesson 8</span>
+        <h3>Forms &amp; Input Elements</h3>
+        <p class="lesson-desc">Forms collect user input. Key attributes: <code>action</code> (where data is sent), <code>method</code> (GET/POST). Input types include text, email, password, number, date, radio, checkbox, file, and more.</p>
+      </div>
+      <div class="editor-area">
+        <div class="code-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">HTML</span>
+            <button class="run-btn" onclick="runCode(8)">&#9654; Run</button>
+            <button class="reset-btn" onclick="resetCode(8)">&#8635; Reset</button>
+          </div>
+          <textarea class="code-editor" id="code-8" spellcheck="false">&lt;form&gt;
+  &lt;label&gt;Full Name:&lt;/label&gt;&lt;br&gt;
+  &lt;input type="text" placeholder="Enter name" required&gt;&lt;br&gt;&lt;br&gt;
+
+  &lt;label&gt;Email:&lt;/label&gt;&lt;br&gt;
+  &lt;input type="email" placeholder="you@example.com"&gt;&lt;br&gt;&lt;br&gt;
+
+  &lt;label&gt;Password:&lt;/label&gt;&lt;br&gt;
+  &lt;input type="password" placeholder="••••••••"&gt;&lt;br&gt;&lt;br&gt;
+
+  &lt;label&gt;Age:&lt;/label&gt;&lt;br&gt;
+  &lt;input type="number" min="1" max="120" value="18"&gt;&lt;br&gt;&lt;br&gt;
+
+  &lt;label&gt;Birthday:&lt;/label&gt;&lt;br&gt;
+  &lt;input type="date"&gt;&lt;br&gt;&lt;br&gt;
+
+  &lt;label&gt;Gender:&lt;/label&gt;&lt;br&gt;
+  &lt;input type="radio" name="gender" value="male"&gt; Male
+  &lt;input type="radio" name="gender" value="female"&gt; Female&lt;br&gt;&lt;br&gt;
+
+  &lt;label&gt;Skills:&lt;/label&gt;&lt;br&gt;
+  &lt;input type="checkbox" value="html"&gt; HTML
+  &lt;input type="checkbox" value="css"&gt; CSS
+  &lt;input type="checkbox" value="js"&gt; JS&lt;br&gt;&lt;br&gt;
+
+  &lt;label&gt;Country:&lt;/label&gt;&lt;br&gt;
+  &lt;select&gt;
+    &lt;option&gt;Philippines&lt;/option&gt;
+    &lt;option&gt;USA&lt;/option&gt;
+    &lt;option&gt;Japan&lt;/option&gt;
+  &lt;/select&gt;&lt;br&gt;&lt;br&gt;
+
+  &lt;label&gt;Message:&lt;/label&gt;&lt;br&gt;
+  &lt;textarea rows="3" cols="30" placeholder="Type here..."&gt;&lt;/textarea&gt;&lt;br&gt;&lt;br&gt;
+
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+  &lt;button type="reset"&gt;Clear&lt;/button&gt;
+&lt;/form&gt;</textarea>
+        </div>
+        <div class="output-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">Output</span>
+          </div>
+          <iframe class="preview-frame" id="preview-8" title="Preview 8"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── HTML 9 ── -->
+    <div class="tutorial-card" data-tutorial="9">
+      <div class="tutorial-header">
+        <span class="lesson-number">Lesson 9</span>
+        <h3>Semantic HTML5 Elements</h3>
+        <p class="lesson-desc">Semantic tags describe their meaning to both the browser and developer. Use <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;aside&gt;</code>, and <code>&lt;footer&gt;</code> instead of generic <code>&lt;div&gt;</code> tags.</p>
+      </div>
+      <div class="editor-area">
+        <div class="code-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">HTML</span>
+            <button class="run-btn" onclick="runCode(9)">&#9654; Run</button>
+            <button class="reset-btn" onclick="resetCode(9)">&#8635; Reset</button>
+          </div>
+          <textarea class="code-editor" id="code-9" spellcheck="false">&lt;style&gt;
+  header,nav,main,article,section,aside,footer{
+    border:2px dashed #999; padding:8px; margin:4px; font-size:13px;
+  }
+  header { background:#ffeeba; }
+  nav    { background:#d4edda; }
+  main   { background:#cce5ff; }
+  aside  { background:#f8d7da; }
+  footer { background:#e2e3e5; }
+&lt;/style&gt;
+
+&lt;header&gt;&lt;b&gt;&amp;lt;header&amp;gt;&lt;/b&gt; — site logo, title, top nav&lt;/header&gt;
+&lt;nav&gt;&lt;b&gt;&amp;lt;nav&amp;gt;&lt;/b&gt; — navigation links: Home | About | Contact&lt;/nav&gt;
+&lt;main&gt;
+  &lt;b&gt;&amp;lt;main&amp;gt;&lt;/b&gt; — main content area
+  &lt;article&gt;&lt;b&gt;&amp;lt;article&amp;gt;&lt;/b&gt; — blog post or self-contained content&lt;/article&gt;
+  &lt;section&gt;&lt;b&gt;&amp;lt;section&amp;gt;&lt;/b&gt; — a thematic grouping of content&lt;/section&gt;
+&lt;/main&gt;
+&lt;aside&gt;&lt;b&gt;&amp;lt;aside&amp;gt;&lt;/b&gt; — sidebar: related links, ads&lt;/aside&gt;
+&lt;footer&gt;&lt;b&gt;&amp;lt;footer&amp;gt;&lt;/b&gt; — copyright, social links&lt;/footer&gt;</textarea>
+        </div>
+        <div class="output-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">Output</span>
+          </div>
+          <iframe class="preview-frame" id="preview-9" title="Preview 9"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── HTML 10 ── -->
+    <div class="tutorial-card" data-tutorial="10">
+      <div class="tutorial-header">
+        <span class="lesson-number">Lesson 10</span>
+        <h3>Div, Span, Classes &amp; IDs</h3>
+        <p class="lesson-desc"><code>&lt;div&gt;</code> is a block-level container; <code>&lt;span&gt;</code> is an inline container. Classes (<code>class=""</code>) can be reused on many elements. IDs (<code>id=""</code>) must be unique per page and are used for specific targeting.</p>
+      </div>
+      <div class="editor-area">
+        <div class="code-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">HTML</span>
+            <button class="run-btn" onclick="runCode(10)">&#9654; Run</button>
+            <button class="reset-btn" onclick="resetCode(10)">&#8635; Reset</button>
+          </div>
+          <textarea class="code-editor" id="code-10" spellcheck="false">&lt;style&gt;
+  .card  { border: 2px solid #4F8EF7; padding: 12px; margin: 8px; border-radius: 8px; }
+  .red   { color: red; }
+  .blue  { color: blue; }
+  #special { background: #fff3cd; font-weight: bold; padding: 8px; }
+&lt;/style&gt;
+
+&lt;!-- div — block container (reusable class) --&gt;
+&lt;div class="card"&gt;Card 1 — uses class "card"&lt;/div&gt;
+&lt;div class="card"&gt;Card 2 — same class, different content&lt;/div&gt;
+
+&lt;!-- span — inline container --&gt;
+&lt;p&gt;Text with &lt;span class="red"&gt;red&lt;/span&gt; and &lt;span class="blue"&gt;blue&lt;/span&gt; words.&lt;/p&gt;
+
+&lt;!-- id — unique per page --&gt;
+&lt;div id="special"&gt;This div has a unique ID = "special"&lt;/div&gt;</textarea>
+        </div>
+        <div class="output-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">Output</span>
+          </div>
+          <iframe class="preview-frame" id="preview-10" title="Preview 10"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── HTML 11 ── -->
+    <div class="tutorial-card" data-tutorial="11">
+      <div class="tutorial-header">
+        <span class="lesson-number">Lesson 11</span>
+        <h3>Audio &amp; Video</h3>
+        <p class="lesson-desc">HTML5 introduced native <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements. Add <code>controls</code> to show the player UI. Use multiple <code>&lt;source&gt;</code> tags for browser compatibility.</p>
+      </div>
+      <div class="editor-area">
+        <div class="code-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">HTML</span>
+            <button class="run-btn" onclick="runCode(11)">&#9654; Run</button>
+            <button class="reset-btn" onclick="resetCode(11)">&#8635; Reset</button>
+          </div>
+          <textarea class="code-editor" id="code-11" spellcheck="false">&lt;h4&gt;Audio Player&lt;/h4&gt;
+&lt;audio controls&gt;
+  &lt;source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg"&gt;
+  Your browser does not support audio.
+&lt;/audio&gt;
+
+&lt;h4&gt;Video Player&lt;/h4&gt;
+&lt;video width="320" controls&gt;
+  &lt;source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"&gt;
+  Your browser does not support video.
+&lt;/video&gt;
+
+&lt;h4&gt;YouTube Embed&lt;/h4&gt;
+&lt;iframe width="320" height="180"
+  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+  title="YouTube video" frameborder="0" allowfullscreen&gt;
+&lt;/iframe&gt;</textarea>
+        </div>
+        <div class="output-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">Output</span>
+          </div>
+          <iframe class="preview-frame" id="preview-11" title="Preview 11"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── HTML 12 ── -->
+    <div class="tutorial-card" data-tutorial="12">
+      <div class="tutorial-header">
+        <span class="lesson-number">Lesson 12</span>
+        <h3>HTML Entities &amp; Special Characters</h3>
+        <p class="lesson-desc">Some characters have special meaning in HTML (like <code>&lt;</code> and <code>&gt;</code>). Use HTML entities to display them safely. Entities start with <code>&amp;</code> and end with <code>;</code>.</p>
+      </div>
+      <div class="editor-area">
+        <div class="code-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">HTML</span>
+            <button class="run-btn" onclick="runCode(12)">&#9654; Run</button>
+            <button class="reset-btn" onclick="resetCode(12)">&#8635; Reset</button>
+          </div>
+          <textarea class="code-editor" id="code-12" spellcheck="false">&lt;p&gt;&amp;lt; = less than: &lt;&lt;/p&gt;
+&lt;p&gt;&amp;gt; = greater than: &gt;&lt;/p&gt;
+&lt;p&gt;&amp;amp; = ampersand: &amp;&lt;/p&gt;
+&lt;p&gt;&amp;quot; = quotation: "&lt;/p&gt;
+&lt;p&gt;&amp;copy; = copyright: &copy;&lt;/p&gt;
+&lt;p&gt;&amp;reg; = registered: &reg;&lt;/p&gt;
+&lt;p&gt;&amp;trade; = trademark: &trade;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp; = non-breaking space (no wrap)&lt;/p&gt;
+&lt;p&gt;&amp;hearts; = heart: &hearts;&lt;/p&gt;
+&lt;p&gt;&amp;#9733; = star: &#9733;&lt;/p&gt;
+&lt;p&gt;&amp;#128512; = emoji: &#128512;&lt;/p&gt;</textarea>
+        </div>
+        <div class="output-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">Output</span>
+          </div>
+          <iframe class="preview-frame" id="preview-12" title="Preview 12"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── HTML 13 ── -->
+    <div class="tutorial-card" data-tutorial="13">
+      <div class="tutorial-header">
+        <span class="lesson-number">Lesson 13</span>
+        <h3>Meta Tags &amp; SEO Basics</h3>
+        <p class="lesson-desc"><code>&lt;meta&gt;</code> tags live in <code>&lt;head&gt;</code> and provide information about the page to browsers and search engines. Key tags: <code>charset</code>, <code>viewport</code>, <code>description</code>, <code>keywords</code>, and Open Graph tags.</p>
+      </div>
+      <div class="editor-area">
+        <div class="code-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">HTML</span>
+            <button class="run-btn" onclick="runCode(13)">&#9654; Run</button>
+            <button class="reset-btn" onclick="resetCode(13)">&#8635; Reset</button>
+          </div>
+          <textarea class="code-editor" id="code-13" spellcheck="false">&lt;!-- These tags go inside &lt;head&gt; --&gt;
+
+&lt;!-- Character encoding (always include) --&gt;
+&lt;meta charset="UTF-8"&gt;
+
+&lt;!-- Mobile responsive viewport --&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+
+&lt;!-- Page description for search engines --&gt;
+&lt;meta name="description" content="Learn HTML and CSS with interactive tutorials."&gt;
+
+&lt;!-- Author --&gt;
+&lt;meta name="author" content="Your Name"&gt;
+
+&lt;!-- Refresh page every 30 seconds --&gt;
+&lt;!-- &lt;meta http-equiv="refresh" content="30"&gt; --&gt;
+
+&lt;!-- Open Graph (social media preview) --&gt;
+&lt;meta property="og:title" content="HTML &amp; CSS Tutorials"&gt;
+&lt;meta property="og:description" content="Learn web development interactively."&gt;
+&lt;meta property="og:image" content="https://placehold.co/400x200"&gt;
+
+&lt;!-- Page title shown in browser tab --&gt;
+&lt;title&gt;HTML &amp; CSS Tutorials&lt;/title&gt;
+
+&lt;!-- Rendered result: --&gt;
+&lt;p&gt;Meta tags are invisible — check the &lt;strong&gt;&amp;lt;head&amp;gt;&lt;/strong&gt; section of your HTML to see them.&lt;/p&gt;
+&lt;p&gt;They control how your page appears in &lt;strong&gt;search results&lt;/strong&gt; and &lt;strong&gt;social media&lt;/strong&gt; previews.&lt;/p&gt;</textarea>
+        </div>
+        <div class="output-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">Output</span>
+          </div>
+          <iframe class="preview-frame" id="preview-13" title="Preview 13"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── HTML 14 ── -->
+    <div class="tutorial-card" data-tutorial="14">
+      <div class="tutorial-header">
+        <span class="lesson-number">Lesson 14</span>
+        <h3>HTML5 APIs — Details, Dialog &amp; Progress</h3>
+        <p class="lesson-desc">HTML5 added several powerful built-in elements: <code>&lt;details&gt;</code>/<code>&lt;summary&gt;</code> for accordions, <code>&lt;progress&gt;</code> for progress bars, <code>&lt;meter&gt;</code> for gauges, and <code>&lt;dialog&gt;</code> for modals — no JavaScript required.</p>
+      </div>
+      <div class="editor-area">
+        <div class="code-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">HTML</span>
+            <button class="run-btn" onclick="runCode(14)">&#9654; Run</button>
+            <button class="reset-btn" onclick="resetCode(14)">&#8635; Reset</button>
+          </div>
+          <textarea class="code-editor" id="code-14" spellcheck="false">&lt;!-- Accordion (no JS needed) --&gt;
+&lt;details&gt;
+  &lt;summary&gt;Click to expand ▼&lt;/summary&gt;
+  &lt;p&gt;Hidden content revealed! Great for FAQs.&lt;/p&gt;
+&lt;/details&gt;
+
+&lt;br&gt;
+
+&lt;!-- Progress bar --&gt;
+&lt;label&gt;Course Progress:&lt;/label&gt;
+&lt;progress value="70" max="100"&gt;&lt;/progress&gt; 70%
+
+&lt;br&gt;&lt;br&gt;
+
+&lt;!-- Meter (gauge) --&gt;
+&lt;label&gt;Disk Usage:&lt;/label&gt;
+&lt;meter value="6" min="0" max="10" low="3" high="8" optimum="2"&gt;&lt;/meter&gt; 6 / 10 GB
+
+&lt;br&gt;&lt;br&gt;
+
+&lt;!-- Tooltip with abbr --&gt;
+&lt;p&gt;Hover over: &lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;&lt;/p&gt;
+
+&lt;!-- Time element --&gt;
+&lt;p&gt;Published: &lt;time datetime="2026-09-26"&gt;September 26, 2026&lt;/time&gt;&lt;/p&gt;</textarea>
+        </div>
+        <div class="output-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">Output</span>
+          </div>
+          <iframe class="preview-frame" id="preview-14" title="Preview 14"></iframe>
+        </div>
+      </div>
+    </div>
+
+  </section><!-- /html-section -->
+
+  <!-- ================================================================
+       CSS TUTORIALS  (lessons 15 – 28)
+       ================================================================ -->
+  <section id="css-section" class="tutorial-section">
+    <h2 class="section-title"><span class="badge badge-css">CSS</span> Tutorials</h2>
+    <p class="section-intro">CSS (Cascading Style Sheets) controls how HTML looks. Master these topics and you can style any webpage from scratch.</p>
+
+    <!-- ── CSS 1 ── -->
+    <div class="tutorial-card" data-tutorial="15">
+      <div class="tutorial-header">
+        <span class="lesson-number">Lesson 1</span>
+        <h3>CSS Selectors</h3>
+        <p class="lesson-desc">Selectors target HTML elements. Learn the essential types: element, class (<code>.name</code>), ID (<code>#name</code>), attribute, descendant, child (<code>&gt;</code>), sibling (<code>+</code>, <code>~</code>), and the universal selector (<code>*</code>).</p>
+      </div>
+      <div class="editor-area">
+        <div class="code-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">HTML + CSS</span>
+            <button class="run-btn" onclick="runCode(15)">&#9654; Run</button>
+            <button class="reset-btn" onclick="resetCode(15)">&#8635; Reset</button>
+          </div>
+          <textarea class="code-editor" id="code-15" spellcheck="false">&lt;style&gt;
+  /* Element selector */
+  p { color: #333; }
+
+  /* Class selector */
+  .highlight { background: yellow; padding: 2px 6px; }
+
+  /* ID selector */
+  #special { color: red; font-weight: bold; }
+
+  /* Descendant selector */
+  .box p { color: blue; }
+
+  /* Child selector */
+  .box &gt; span { color: green; }
+
+  /* Adjacent sibling */
+  h4 + p { border-left: 3px solid orange; padding-left: 8px; }
+
+  /* Attribute selector */
+  input[type="text"] { border: 2px solid #4F8EF7; padding: 4px; }
+&lt;/style&gt;
+
+&lt;p&gt;Element selector — dark text&lt;/p&gt;
+&lt;p class="highlight"&gt;Class selector — yellow highlight&lt;/p&gt;
+&lt;p id="special"&gt;ID selector — red bold&lt;/p&gt;
+
+&lt;div class="box"&gt;
+  &lt;p&gt;Descendant — blue text&lt;/p&gt;
+  &lt;span&gt;Child &gt; span — green&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;h4&gt;Adjacent sibling h4&lt;/h4&gt;
+&lt;p&gt;This p comes right after h4 — orange border&lt;/p&gt;
+
+&lt;input type="text" placeholder="Attribute selector"&gt;</textarea>
+        </div>
+        <div class="output-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">Output</span>
+          </div>
+          <iframe class="preview-frame" id="preview-15" title="Preview 15"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── CSS 2 ── -->
+    <div class="tutorial-card" data-tutorial="16">
+      <div class="tutorial-header">
+        <span class="lesson-number">Lesson 2</span>
+        <h3>Colors &amp; Backgrounds</h3>
+        <p class="lesson-desc">CSS colors can be written as named colors, HEX, RGB, RGBA, HSL, or HSLA. Backgrounds support solid colors, gradients, and images.</p>
+      </div>
+      <div class="editor-area">
+        <div class="code-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">HTML + CSS</span>
+            <button class="run-btn" onclick="runCode(16)">&#9654; Run</button>
+            <button class="reset-btn" onclick="resetCode(16)">&#8635; Reset</button>
+          </div>
+          <textarea class="code-editor" id="code-16" spellcheck="false">&lt;style&gt;
+  .row { padding: 14px; margin: 6px 0; color: white; font-weight: 600; border-radius: 6px; }
+  .c1 { background-color: tomato; }
+  .c2 { background-color: #264de4; }
+  .c3 { background-color: rgb(46, 204, 113); }
+  .c4 { background-color: rgba(255, 165, 0, 0.7); color: #333; }
+  .c5 { background-color: hsl(270, 70%, 50%); }
+  .c6 { background: linear-gradient(135deg, #e44d26, #f7931e); }
+  .c7 { background: linear-gradient(to right, #264de4, #2ecc71); }
+  .c8 { background: radial-gradient(circle, #fff 0%, #4F8EF7 100%); color: #333; }
+&lt;/style&gt;
+
+&lt;div class="row c1"&gt;Named color: tomato&lt;/div&gt;
+&lt;div class="row c2"&gt;HEX: #264de4&lt;/div&gt;
+&lt;div class="row c3"&gt;RGB: rgb(46,204,113)&lt;/div&gt;
+&lt;div class="row c4"&gt;RGBA (70% opacity): rgba(255,165,0,0.7)&lt;/div&gt;
+&lt;div class="row c5"&gt;HSL: hsl(270,70%,50%)&lt;/div&gt;
+&lt;div class="row c6"&gt;Linear gradient (diagonal)&lt;/div&gt;
+&lt;div class="row c7"&gt;Linear gradient (left to right)&lt;/div&gt;
+&lt;div class="row c8"&gt;Radial gradient&lt;/div&gt;</textarea>
+        </div>
+        <div class="output-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">Output</span>
+          </div>
+          <iframe class="preview-frame" id="preview-16" title="Preview 16"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── CSS 3 ── -->
+    <div class="tutorial-card" data-tutorial="17">
+      <div class="tutorial-header">
+        <span class="lesson-number">Lesson 3</span>
+        <h3>Typography &amp; Fonts</h3>
+        <p class="lesson-desc">Control every aspect of text: <code>font-family</code>, <code>font-size</code>, <code>font-weight</code>, <code>line-height</code>, <code>letter-spacing</code>, <code>text-align</code>, <code>text-transform</code>, and Google Fonts.</p>
+      </div>
+      <div class="editor-area">
+        <div class="code-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">HTML + CSS</span>
+            <button class="run-btn" onclick="runCode(17)">&#9654; Run</button>
+            <button class="reset-btn" onclick="resetCode(17)">&#8635; Reset</button>
+          </div>
+          <textarea class="code-editor" id="code-17" spellcheck="false">&lt;style&gt;
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+  .serif    { font-family: Georgia, serif; font-size: 20px; }
+  .sans     { font-family: Arial, sans-serif; font-size: 20px; }
+  .mono     { font-family: 'Courier New', monospace; font-size: 18px; }
+  .google   { font-family: 'Poppins', sans-serif; font-size: 20px; font-weight: 700; color: #264de4; }
+  .big      { font-size: 2rem; font-weight: 900; letter-spacing: -1px; }
+  .spaced   { letter-spacing: 6px; text-transform: uppercase; font-size: 14px; }
+  .center   { text-align: center; }
+  .justify  { text-align: justify; line-height: 1.9; max-width: 320px; }
+  .shadow   { text-shadow: 2px 2px 6px rgba(0,0,0,0.4); font-size: 22px; font-weight: bold; }
+&lt;/style&gt;
+
+&lt;p class="serif"&gt;Georgia serif font&lt;/p&gt;
+&lt;p class="sans"&gt;Arial sans-serif font&lt;/p&gt;
+&lt;p class="mono"&gt;Courier New monospace font&lt;/p&gt;
+&lt;p class="google"&gt;Poppins — Google Font&lt;/p&gt;
+&lt;p class="big"&gt;Huge bold text&lt;/p&gt;
+&lt;p class="spaced"&gt;letter spacing&lt;/p&gt;
+&lt;p class="shadow"&gt;Text with shadow&lt;/p&gt;
+&lt;p class="justify"&gt;Justified text stretches to fill the full width of its container, creating clean edges on both sides of the paragraph.&lt;/p&gt;</textarea>
+        </div>
+        <div class="output-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">Output</span>
+          </div>
+          <iframe class="preview-frame" id="preview-17" title="Preview 17"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── CSS 4 ── -->
+    <div class="tutorial-card" data-tutorial="18">
+      <div class="tutorial-header">
+        <span class="lesson-number">Lesson 4</span>
+        <h3>The Box Model</h3>
+        <p class="lesson-desc">Every element is a rectangular box made up of: <strong>content</strong> → <strong>padding</strong> → <strong>border</strong> → <strong>margin</strong>. Use <code>box-sizing: border-box</code> so padding and border are included in the width.</p>
+      </div>
+      <div class="editor-area">
+        <div class="code-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">HTML + CSS</span>
+            <button class="run-btn" onclick="runCode(18)">&#9654; Run</button>
+            <button class="reset-btn" onclick="resetCode(18)">&#8635; Reset</button>
+          </div>
+          <textarea class="code-editor" id="code-18" spellcheck="false">&lt;style&gt;
+  .outer {
+    background: #fde8d8;
+    padding: 20px;         /* space INSIDE the border */
+    border: 4px solid #e44d26;
+    margin: 20px;          /* space OUTSIDE the border */
+    width: 280px;
+    box-sizing: border-box; /* padding included in width */
+  }
+  .inner {
+    background: #264de4;
+    color: white;
+    padding: 10px;
+    border: 2px dashed white;
+    text-align: center;
+    font-size: 13px;
+  }
+  .shorthand {
+    /* margin: top right bottom left */
+    margin: 10px 20px 30px 40px;
+    /* padding shorthand: top/bottom  left/right */
+    padding: 12px 24px;
+    background: #2ecc71;
+    color: white;
+    width: fit-content;
+    border-radius: 6px;
+  }
+&lt;/style&gt;
+
+&lt;div class="outer"&gt;
+  Margin (orange area outside)
+  &lt;div class="inner"&gt;Content — padding inside, border around&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="shorthand"&gt;margin: 10 20 30 40 | padding: 12 24&lt;/div&gt;</textarea>
+        </div>
+        <div class="output-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">Output</span>
+          </div>
+          <iframe class="preview-frame" id="preview-18" title="Preview 18"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── CSS 5 ── -->
+    <div class="tutorial-card" data-tutorial="19">
+      <div class="tutorial-header">
+        <span class="lesson-number">Lesson 5</span>
+        <h3>Display &amp; Visibility</h3>
+        <p class="lesson-desc"><code>display</code> controls layout behaviour: <code>block</code>, <code>inline</code>, <code>inline-block</code>, <code>none</code>. <code>visibility: hidden</code> hides but keeps space. <code>opacity: 0</code> makes transparent but interactive.</p>
+      </div>
+      <div class="editor-area">
+        <div class="code-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">HTML + CSS</span>
+            <button class="run-btn" onclick="runCode(19)">&#9654; Run</button>
+            <button class="reset-btn" onclick="resetCode(19)">&#8635; Reset</button>
+          </div>
+          <textarea class="code-editor" id="code-19" spellcheck="false">&lt;style&gt;
+  .lbl { font-size:12px; color:#666; margin-bottom:2px; }
+  .block { display:block; background:#4F8EF7; color:white; padding:8px; margin-bottom:6px; }
+  .inline { display:inline; background:#e44d26; color:white; padding:4px 8px; }
+  .inline-block { display:inline-block; background:#2ecc71; color:white; padding:8px 16px; width:120px; text-align:center; margin:4px; }
+  .hidden-vis  { visibility:hidden; background:#ccc; padding:8px; }
+  .hidden-none { display:none; }
+  .faded { opacity:0.2; background:#9b59b6; color:white; padding:8px; margin-top:6px; }
+&lt;/style&gt;
+
+&lt;p class="lbl"&gt;display: block (full width row)&lt;/p&gt;
+&lt;div class="block"&gt;Block 1&lt;/div&gt;
+&lt;div class="block"&gt;Block 2&lt;/div&gt;
+
+&lt;p class="lbl"&gt;display: inline (flows in text)&lt;/p&gt;
+&lt;span class="inline"&gt;Inline A&lt;/span&gt; text between &lt;span class="inline"&gt;Inline B&lt;/span&gt;
+
+&lt;br&gt;&lt;br&gt;
+&lt;p class="lbl"&gt;display: inline-block (side by side with width)&lt;/p&gt;
+&lt;div class="inline-block"&gt;Box 1&lt;/div&gt;
+&lt;div class="inline-block"&gt;Box 2&lt;/div&gt;
+&lt;div class="inline-block"&gt;Box 3&lt;/div&gt;
+
+&lt;br&gt;
+&lt;p class="lbl"&gt;visibility: hidden (space preserved)&lt;/p&gt;
+&lt;div class="hidden-vis"&gt;You can't see me&lt;/div&gt;
+
+&lt;p class="lbl"&gt;opacity: 0.2 (transparent)&lt;/p&gt;
+&lt;div class="faded"&gt;Faded with opacity&lt;/div&gt;</textarea>
+        </div>
+        <div class="output-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">Output</span>
+          </div>
+          <iframe class="preview-frame" id="preview-19" title="Preview 19"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── CSS 6 ── -->
+    <div class="tutorial-card" data-tutorial="20">
+      <div class="tutorial-header">
+        <span class="lesson-number">Lesson 6</span>
+        <h3>CSS Positioning</h3>
+        <p class="lesson-desc">The <code>position</code> property controls how elements are placed: <code>static</code> (default), <code>relative</code> (offset from normal), <code>absolute</code> (relative to nearest positioned parent), <code>fixed</code> (relative to viewport), <code>sticky</code>.</p>
+      </div>
+      <div class="editor-area">
+        <div class="code-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">HTML + CSS</span>
+            <button class="run-btn" onclick="runCode(20)">&#9654; Run</button>
+            <button class="reset-btn" onclick="resetCode(20)">&#8635; Reset</button>
+          </div>
+          <textarea class="code-editor" id="code-20" spellcheck="false">&lt;style&gt;
+  .box { width:80px; height:50px; display:flex; align-items:center; justify-content:center; color:white; font-size:12px; font-weight:bold; border-radius:4px; }
+  .container { position:relative; height:160px; background:#f0f0f0; margin-bottom:16px; border:1px solid #ccc; }
+  .rel  { background:#4F8EF7; position:relative; top:20px; left:20px; }
+  .abs  { background:#e44d26; position:absolute; bottom:10px; right:10px; }
+  .static { background:#2ecc71; }
+  .sticky-box {
+    position:sticky; top:0;
+    background:#9b59b6; color:white;
+    padding:8px; text-align:center;
+    font-weight:bold;
+  }
+&lt;/style&gt;
+
+&lt;div class="sticky-box"&gt;position: sticky (scroll this panel)&lt;/div&gt;
+
+&lt;div class="container"&gt;
+  &lt;div class="box static"&gt;static&lt;/div&gt;
+  &lt;div class="box rel"&gt;relative +20,20&lt;/div&gt;
+  &lt;div class="box abs"&gt;absolute bottom-right&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p style="font-size:13px;color:#555"&gt;
+  &lt;b&gt;relative&lt;/b&gt; — shifted from its normal spot.&lt;br&gt;
+  &lt;b&gt;absolute&lt;/b&gt; — removed from flow, placed inside nearest positioned parent.&lt;br&gt;
+  &lt;b&gt;fixed&lt;/b&gt; — stays in viewport even while scrolling.&lt;br&gt;
+  &lt;b&gt;sticky&lt;/b&gt; — sticks to the top when you scroll past it.
+&lt;/p&gt;</textarea>
+        </div>
+        <div class="output-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">Output</span>
+          </div>
+          <iframe class="preview-frame" id="preview-20" title="Preview 20"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── CSS 7 ── -->
+    <div class="tutorial-card" data-tutorial="21">
+      <div class="tutorial-header">
+        <span class="lesson-number">Lesson 7</span>
+        <h3>Flexbox</h3>
+        <p class="lesson-desc">Flexbox is a one-dimensional layout system. Set <code>display: flex</code> on the parent. Control direction with <code>flex-direction</code>, alignment with <code>justify-content</code> (main axis) and <code>align-items</code> (cross axis).</p>
+      </div>
+      <div class="editor-area">
+        <div class="code-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">HTML + CSS</span>
+            <button class="run-btn" onclick="runCode(21)">&#9654; Run</button>
+            <button class="reset-btn" onclick="resetCode(21)">&#8635; Reset</button>
+          </div>
+          <textarea class="code-editor" id="code-21" spellcheck="false">&lt;style&gt;
+  .flex { display:flex; gap:8px; padding:10px; background:#ecf0f1; margin-bottom:12px; border-radius:6px; }
+  .item { background:#9b59b6; color:white; padding:12px 18px; border-radius:6px; font-weight:bold; }
+  .space-between { justify-content:space-between; }
+  .center-both   { justify-content:center; align-items:center; height:80px; }
+  .column        { flex-direction:column; width:160px; }
+  .grow-item     { flex-grow:1; background:#e44d26; }
+  .wrap-flex     { flex-wrap:wrap; }
+&lt;/style&gt;
+
+&lt;p&gt;&lt;b&gt;justify-content: space-between&lt;/b&gt;&lt;/p&gt;
+&lt;div class="flex space-between"&gt;
+  &lt;div class="item"&gt;1&lt;/div&gt;&lt;div class="item"&gt;2&lt;/div&gt;&lt;div class="item"&gt;3&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;b&gt;justify-content: center + align-items: center&lt;/b&gt;&lt;/p&gt;
+&lt;div class="flex center-both"&gt;
+  &lt;div class="item"&gt;Centered!&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;b&gt;flex-direction: column&lt;/b&gt;&lt;/p&gt;
+&lt;div class="flex column"&gt;
+  &lt;div class="item"&gt;Top&lt;/div&gt;&lt;div class="item"&gt;Middle&lt;/div&gt;&lt;div class="item"&gt;Bottom&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;b&gt;flex-grow (item 2 stretches)&lt;/b&gt;&lt;/p&gt;
+&lt;div class="flex"&gt;
+  &lt;div class="item"&gt;Fixed&lt;/div&gt;
+  &lt;div class="item grow-item"&gt;flex-grow: 1&lt;/div&gt;
+  &lt;div class="item"&gt;Fixed&lt;/div&gt;
+&lt;/div&gt;</textarea>
+        </div>
+        <div class="output-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">Output</span>
+          </div>
+          <iframe class="preview-frame" id="preview-21" title="Preview 21"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── CSS 8 ── -->
+    <div class="tutorial-card" data-tutorial="22">
+      <div class="tutorial-header">
+        <span class="lesson-number">Lesson 8</span>
+        <h3>CSS Grid</h3>
+        <p class="lesson-desc">Grid is a two-dimensional layout system for rows AND columns. Define columns with <code>grid-template-columns</code>, rows with <code>grid-template-rows</code>, and place items with <code>grid-column</code>/<code>grid-row</code> span.</p>
+      </div>
+      <div class="editor-area">
+        <div class="code-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">HTML + CSS</span>
+            <button class="run-btn" onclick="runCode(22)">&#9654; Run</button>
+            <button class="reset-btn" onclick="resetCode(22)">&#8635; Reset</button>
+          </div>
+          <textarea class="code-editor" id="code-22" spellcheck="false">&lt;style&gt;
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    padding: 10px;
+    background: #f0f0f0;
+    border-radius: 8px;
+  }
+  .cell {
+    background: #1abc9c;
+    color: white;
+    padding: 18px;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: bold;
+  }
+  .header { grid-column: 1 / -1; background: #2c3e50; }
+  .sidebar { grid-row: span 2; background: #3498db; }
+  .footer { grid-column: span 3; background: #e74c3c; }
+&lt;/style&gt;
+
+&lt;div class="grid"&gt;
+  &lt;div class="cell header"&gt;Header (spans all 3 cols)&lt;/div&gt;
+  &lt;div class="cell sidebar"&gt;Sidebar (spans 2 rows)&lt;/div&gt;
+  &lt;div class="cell"&gt;Content 1&lt;/div&gt;
+  &lt;div class="cell"&gt;Content 2&lt;/div&gt;
+  &lt;div class="cell"&gt;Content 3&lt;/div&gt;
+  &lt;div class="cell"&gt;Content 4&lt;/div&gt;
+  &lt;div class="cell footer"&gt;Footer (spans 3 cols)&lt;/div&gt;
+&lt;/div&gt;</textarea>
+        </div>
+        <div class="output-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">Output</span>
+          </div>
+          <iframe class="preview-frame" id="preview-22" title="Preview 22"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── CSS 9 ── -->
+    <div class="tutorial-card" data-tutorial="23">
+      <div class="tutorial-header">
+        <span class="lesson-number">Lesson 9</span>
+        <h3>Hover Effects &amp; Transitions</h3>
+        <p class="lesson-desc">The <code>:hover</code> pseudo-class applies styles when the mouse is over an element. <code>transition</code> smoothly animates the change: <code>transition: property duration timing-function</code>.</p>
+      </div>
+      <div class="editor-area">
+        <div class="code-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">HTML + CSS</span>
+            <button class="run-btn" onclick="runCode(23)">&#9654; Run</button>
+            <button class="reset-btn" onclick="resetCode(23)">&#8635; Reset</button>
+          </div>
+          <textarea class="code-editor" id="code-23" spellcheck="false">&lt;style&gt;
+  .btn {
+    display:inline-block; padding:12px 28px; margin:8px;
+    background:#4F8EF7; color:white; border:none; border-radius:8px;
+    cursor:pointer; font-size:15px; font-weight:600;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  }
+  .btn:hover { background:#264de4; transform:translateY(-3px); box-shadow:0 8px 20px rgba(38,77,228,0.4); }
+
+  .card {
+    display:inline-block; width:130px; padding:20px; margin:8px;
+    background:#fff; border:2px solid #ddd; border-radius:12px;
+    text-align:center; cursor:pointer; vertical-align:top;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+  }
+  .card:hover { transform:translateY(-8px); box-shadow:0 16px 32px rgba(0,0,0,0.15); border-color:#4F8EF7; }
+
+  .img-zoom { width:120px; height:80px; background:#2ecc71; margin:8px; display:inline-block;
+    overflow:hidden; border-radius:8px; }
+  .img-zoom img { width:100%; height:100%; object-fit:cover;
+    transition:transform 0.4s ease; }
+  .img-zoom:hover img { transform:scale(1.3); }
+
+  a.link { color:#e44d26; font-weight:600; font-size:18px; text-decoration:none;
+    border-bottom:2px solid transparent; transition:border-color 0.3s; }
+  a.link:hover { border-color:#e44d26; }
+&lt;/style&gt;
+
+&lt;p&gt;Hover over these elements:&lt;/p&gt;
+&lt;button class="btn"&gt;Button Hover&lt;/button&gt;
+
+&lt;div class="card"&gt;⭐&lt;br&gt;Card Hover&lt;/div&gt;
+&lt;div class="card"&gt;🚀&lt;br&gt;Card Hover&lt;/div&gt;
+
+&lt;br&gt;
+&lt;div class="img-zoom"&gt;
+  &lt;img src="https://placehold.co/120x80/4F8EF7/fff?text=Zoom" alt="zoom"&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;a class="link" href="#"&gt;Underline on hover&lt;/a&gt;</textarea>
+        </div>
+        <div class="output-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">Output</span>
+          </div>
+          <iframe class="preview-frame" id="preview-23" title="Preview 23"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── CSS 10 ── -->
+    <div class="tutorial-card" data-tutorial="24">
+      <div class="tutorial-header">
+        <span class="lesson-number">Lesson 10</span>
+        <h3>CSS Animations &amp; Keyframes</h3>
+        <p class="lesson-desc">Use <code>@keyframes</code> to define animation steps and <code>animation</code> to apply them. Control duration, timing, delay, iteration count, and direction.</p>
+      </div>
+      <div class="editor-area">
+        <div class="code-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">HTML + CSS</span>
+            <button class="run-btn" onclick="runCode(24)">&#9654; Run</button>
+            <button class="reset-btn" onclick="resetCode(24)">&#8635; Reset</button>
+          </div>
+          <textarea class="code-editor" id="code-24" spellcheck="false">&lt;style&gt;
+  @keyframes fadeIn {
+    from { opacity:0; transform:translateY(20px); }
+    to   { opacity:1; transform:translateY(0); }
+  }
+  @keyframes spin {
+    from { transform:rotate(0deg); }
+    to   { transform:rotate(360deg); }
+  }
+  @keyframes bounce {
+    0%,100% { transform:translateY(0); }
+    50%     { transform:translateY(-30px); }
+  }
+  @keyframes colorShift {
+    0%   { background:#e44d26; }
+    33%  { background:#264de4; }
+    66%  { background:#2ecc71; }
+    100% { background:#e44d26; }
+  }
+  @keyframes pulse {
+    0%,100% { transform:scale(1); }
+    50%     { transform:scale(1.15); }
+  }
+
+  .fade    { animation: fadeIn 1s ease forwards; background:#4F8EF7; color:white; padding:12px; border-radius:6px; margin:6px 0; }
+  .spinner { width:50px; height:50px; border:6px solid #eee; border-top-color:#264de4; border-radius:50%; animation:spin 1s linear infinite; margin:10px; display:inline-block; }
+  .bouncer { width:40px; height:40px; background:#e44d26; border-radius:50%; animation:bounce 0.8s ease infinite; display:inline-block; margin:10px; }
+  .shifter { padding:12px 20px; color:white; font-weight:bold; border-radius:6px; animation:colorShift 3s linear infinite; display:inline-block; margin:6px; }
+  .pulser  { display:inline-block; padding:12px 24px; background:#9b59b6; color:white; border-radius:8px; animation:pulse 1s ease infinite; margin:6px; font-weight:bold; }
+&lt;/style&gt;
+
+&lt;div class="fade"&gt;fadeIn animation (runs once)&lt;/div&gt;
+&lt;div class="spinner"&gt;&lt;/div&gt; &amp;larr; spin
+&lt;div class="bouncer"&gt;&lt;/div&gt; &amp;larr; bounce
+&lt;div class="shifter"&gt;Color Shift (infinite)&lt;/div&gt;
+&lt;div class="pulser"&gt;Pulse&lt;/div&gt;</textarea>
+        </div>
+        <div class="output-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">Output</span>
+          </div>
+          <iframe class="preview-frame" id="preview-24" title="Preview 24"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── CSS 11 ── -->
+    <div class="tutorial-card" data-tutorial="25">
+      <div class="tutorial-header">
+        <span class="lesson-number">Lesson 11</span>
+        <h3>Pseudo-classes</h3>
+        <p class="lesson-desc">Pseudo-classes select elements based on state or position: <code>:hover</code>, <code>:focus</code>, <code>:active</code>, <code>:visited</code>, <code>:first-child</code>, <code>:last-child</code>, <code>:nth-child()</code>, <code>:not()</code>, <code>:checked</code>.</p>
+      </div>
+      <div class="editor-area">
+        <div class="code-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">HTML + CSS</span>
+            <button class="run-btn" onclick="runCode(25)">&#9654; Run</button>
+            <button class="reset-btn" onclick="resetCode(25)">&#8635; Reset</button>
+          </div>
+          <textarea class="code-editor" id="code-25" spellcheck="false">&lt;style&gt;
+  input:focus  { outline:3px solid #4F8EF7; background:#e8f4fd; }
+  button:active { transform:scale(0.95); background:#1a252f !important; }
+
+  li:first-child { color:#e44d26; font-weight:bold; }
+  li:last-child  { color:#2ecc71; font-weight:bold; }
+  li:nth-child(2){ background:#ffeeba; }
+
+  tr:nth-child(even) { background:#f2f2f2; }
+  tr:hover           { background:#cce5ff; }
+
+  .list li:not(.skip) { list-style:none; padding:4px; border-left:3px solid #264de4; margin:4px 0; }
+  .list li.skip       { color:#999; font-style:italic; }
+
+  input[type="checkbox"]:checked + label { color:#2ecc71; font-weight:bold; text-decoration:line-through; }
+&lt;/style&gt;
+
+&lt;p&gt;&lt;b&gt;:focus on input:&lt;/b&gt;&lt;/p&gt;
+&lt;input type="text" placeholder="Click me to see :focus"&gt;
+
+&lt;p&gt;&lt;b&gt;:first-child, :last-child, :nth-child(2):&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;First (red)&lt;/li&gt;
+  &lt;li&gt;Second (yellow bg)&lt;/li&gt;
+  &lt;li&gt;Third&lt;/li&gt;
+  &lt;li&gt;Last (green)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;:nth-child(even) on table rows:&lt;/b&gt;&lt;/p&gt;
+&lt;table border="1" cellpadding="6" width="100%"&gt;
+  &lt;tr&gt;&lt;td&gt;Row 1&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Row 2 (even)&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Row 3&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Row 4 (even)&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;b&gt;:not() — skip .skip class:&lt;/b&gt;&lt;/p&gt;
+&lt;ul class="list"&gt;
+  &lt;li&gt;Item A&lt;/li&gt;
+  &lt;li class="skip"&gt;Skipped (has .skip)&lt;/li&gt;
+  &lt;li&gt;Item C&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;:checked:&lt;/b&gt;&lt;/p&gt;
+&lt;input type="checkbox" id="task1"&gt;
+&lt;label for="task1"&gt; Check me off&lt;/label&gt;</textarea>
+        </div>
+        <div class="output-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">Output</span>
+          </div>
+          <iframe class="preview-frame" id="preview-25" title="Preview 25"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── CSS 12 ── -->
+    <div class="tutorial-card" data-tutorial="26">
+      <div class="tutorial-header">
+        <span class="lesson-number">Lesson 12</span>
+        <h3>Pseudo-elements</h3>
+        <p class="lesson-desc">Pseudo-elements style specific parts of an element: <code>::before</code> and <code>::after</code> insert virtual content, <code>::first-letter</code> styles the first character, <code>::first-line</code> styles the first line, <code>::selection</code> styles highlighted text, <code>::placeholder</code> styles input placeholder text.</p>
+      </div>
+      <div class="editor-area">
+        <div class="code-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">HTML + CSS</span>
+            <button class="run-btn" onclick="runCode(26)">&#9654; Run</button>
+            <button class="reset-btn" onclick="resetCode(26)">&#8635; Reset</button>
+          </div>
+          <textarea class="code-editor" id="code-26" spellcheck="false">&lt;style&gt;
+  /* ::before and ::after */
+  .quote::before { content: "\201C"; font-size:2em; color:#4F8EF7; vertical-align:-0.3em; }
+  .quote::after  { content: "\201D"; font-size:2em; color:#4F8EF7; vertical-align:-0.3em; }
+
+  /* ::first-letter — drop cap */
+  .dropcap::first-letter {
+    font-size: 3em; font-weight: bold; float: left;
+    color: #e44d26; line-height: 0.8; margin-right: 6px;
+  }
+
+  /* ::first-line */
+  .firstline::first-line { color:#264de4; font-weight:bold; }
+
+  /* ::selection */
+  ::selection { background:#9b59b6; color:white; }
+
+  /* ::placeholder */
+  input::placeholder { color:#aaa; font-style:italic; }
+
+  /* ::before as icon */
+  .icon-item { list-style:none; margin:6px 0; }
+  .icon-item::before { content:"✔ "; color:#2ecc71; font-weight:bold; }
+&lt;/style&gt;
+
+&lt;p class="quote"&gt;Learning never exhausts the mind.&lt;/p&gt;
+
+&lt;p class="dropcap"&gt;Drop cap — the first letter of this paragraph is styled large and floated, like in old books and magazines.&lt;/p&gt;
+
+&lt;p class="firstline"&gt;This is the first line — it appears blue and bold.
+The rest of the paragraph is styled normally with default colours.&lt;/p&gt;
+
+&lt;p&gt;Try selecting this text — the highlight is purple! (::selection)&lt;/p&gt;
+
+&lt;input type="text" placeholder="Styled placeholder text..."&gt;
+
+&lt;br&gt;&lt;br&gt;
+&lt;ul style="padding:0"&gt;
+  &lt;li class="icon-item"&gt;Learn HTML&lt;/li&gt;
+  &lt;li class="icon-item"&gt;Learn CSS&lt;/li&gt;
+  &lt;li class="icon-item"&gt;Build projects&lt;/li&gt;
+&lt;/ul&gt;</textarea>
+        </div>
+        <div class="output-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">Output</span>
+          </div>
+          <iframe class="preview-frame" id="preview-26" title="Preview 26"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── CSS 13 ── -->
+    <div class="tutorial-card" data-tutorial="27">
+      <div class="tutorial-header">
+        <span class="lesson-number">Lesson 13</span>
+        <h3>Responsive Design &amp; Media Queries</h3>
+        <p class="lesson-desc">Media queries apply CSS only when certain conditions are met (like screen width). The mobile-first approach starts with small-screen styles, then overrides for larger screens using <code>min-width</code>.</p>
+      </div>
+      <div class="editor-area">
+        <div class="code-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">HTML + CSS</span>
+            <button class="run-btn" onclick="runCode(27)">&#9654; Run</button>
+            <button class="reset-btn" onclick="resetCode(27)">&#8635; Reset</button>
+          </div>
+          <textarea class="code-editor" id="code-27" spellcheck="false">&lt;style&gt;
+  /* Mobile first (default) */
+  .rbox {
+    background: #e44d26; color:white; padding:16px;
+    text-align:center; font-weight:bold; border-radius:8px;
+    font-size:14px; margin-bottom:8px;
+  }
+  .grid-resp {
+    display:grid;
+    grid-template-columns: 1fr; /* 1 column on mobile */
+    gap:10px; margin-top:10px;
+  }
+  .cell { background:#4F8EF7; color:white; padding:16px; border-radius:6px; text-align:center; }
+
+  /* Tablet (600px+) */
+  @media (min-width: 600px) {
+    .rbox { background:#264de4; font-size:16px; }
+    .grid-resp { grid-template-columns: 1fr 1fr; } /* 2 columns */
+  }
+
+  /* Desktop (900px+) */
+  @media (min-width: 900px) {
+    .rbox { background:#2ecc71; font-size:20px; }
+    .grid-resp { grid-template-columns: 1fr 1fr 1fr; } /* 3 columns */
+  }
+&lt;/style&gt;
+
+&lt;div class="rbox"&gt;
+  Resize the Output panel to see colour &amp; size change!&lt;br&gt;
+  🟠 Mobile (&lt;600px) | 🔵 Tablet (600px+) | 🟢 Desktop (900px+)
+&lt;/div&gt;
+
+&lt;div class="grid-resp"&gt;
+  &lt;div class="cell"&gt;Card 1&lt;/div&gt;
+  &lt;div class="cell"&gt;Card 2&lt;/div&gt;
+  &lt;div class="cell"&gt;Card 3&lt;/div&gt;
+  &lt;div class="cell"&gt;Card 4&lt;/div&gt;
+  &lt;div class="cell"&gt;Card 5&lt;/div&gt;
+  &lt;div class="cell"&gt;Card 6&lt;/div&gt;
+&lt;/div&gt;</textarea>
+        </div>
+        <div class="output-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">Output</span>
+          </div>
+          <iframe class="preview-frame" id="preview-27" title="Preview 27"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── CSS 14 ── -->
+    <div class="tutorial-card" data-tutorial="28">
+      <div class="tutorial-header">
+        <span class="lesson-number">Lesson 14</span>
+        <h3>CSS Variables (Custom Properties)</h3>
+        <p class="lesson-desc">CSS variables (custom properties) are defined with <code>--name: value</code> and used with <code>var(--name)</code>. Define them in <code>:root</code> to make them global. They make theming and maintenance much easier.</p>
+      </div>
+      <div class="editor-area">
+        <div class="code-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">HTML + CSS</span>
+            <button class="run-btn" onclick="runCode(28)">&#9654; Run</button>
+            <button class="reset-btn" onclick="resetCode(28)">&#8635; Reset</button>
+          </div>
+          <textarea class="code-editor" id="code-28" spellcheck="false">&lt;style&gt;
+  /* Define global variables in :root */
+  :root {
+    --primary:   #4F8EF7;
+    --secondary: #e44d26;
+    --success:   #2ecc71;
+    --text:      #2c3e50;
+    --radius:    10px;
+    --spacing:   16px;
+    --shadow:    0 4px 16px rgba(0,0,0,0.15);
+  }
+
+  /* Use variables everywhere */
+  .v-card {
+    background: var(--primary);
+    color: white;
+    padding: var(--spacing);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 10px;
+  }
+  .v-card.alt  { background: var(--secondary); }
+  .v-card.good { background: var(--success); }
+
+  .v-btn {
+    padding: 10px 24px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 15px;
+    box-shadow: var(--shadow);
+    margin: 4px;
+    transition: filter 0.2s;
+  }
+  .v-btn:hover { filter: brightness(1.2); }
+  .v-btn.sec   { background: var(--secondary); }
+  .v-btn.ok    { background: var(--success); }
+
+  p.note { color: var(--text); font-size: 13px; }
+&lt;/style&gt;
+
+&lt;div class="v-card"&gt;Primary card — uses --primary&lt;/div&gt;
+&lt;div class="v-card alt"&gt;Secondary card — uses --secondary&lt;/div&gt;
+&lt;div class="v-card good"&gt;Success card — uses --success&lt;/div&gt;
+
+&lt;button class="v-btn"&gt;Primary&lt;/button&gt;
+&lt;button class="v-btn sec"&gt;Secondary&lt;/button&gt;
+&lt;button class="v-btn ok"&gt;Success&lt;/button&gt;
+
+&lt;p class="note"&gt;
+  Try changing &lt;code&gt;--primary: #4F8EF7&lt;/code&gt; to &lt;code&gt;--primary: #9b59b6&lt;/code&gt;
+  above and hit Run — all cards and buttons update instantly!
+&lt;/p&gt;</textarea>
+        </div>
+        <div class="output-panel">
+          <div class="panel-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="panel-label">Output</span>
+          </div>
+          <iframe class="preview-frame" id="preview-28" title="Preview 28"></iframe>
+        </div>
+      </div>
+    </div>
+
+  </section><!-- /css-section -->
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">
+          <span class="footer-logo-html">&lt;HTML&gt;</span>
+          <span class="footer-logo-css">CSS</span>
+        </span>
+        <p class="footer-tagline">Learn by doing. Edit any code and see results instantly.</p>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-stats">
+        <div class="footer-stat"><span class="footer-stat-num">14</span><span class="footer-stat-lbl">HTML Lessons</span></div>
+        <div class="footer-stat"><span class="footer-stat-num">14</span><span class="footer-stat-lbl">CSS Lessons</span></div>
+        <div class="footer-stat"><span class="footer-stat-num">28</span><span class="footer-stat-lbl">Total Topics</span></div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-creator">
+        <span class="footer-made">Originally created by</span>
+        <span class="footer-name">Jian Loñoza</span>
+        <span class="footer-year">&copy; 2026</span>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Press <kbd>Ctrl</kbd> + <kbd>Enter</kbd> inside any editor to run &mdash; or just type and the preview updates automatically.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
